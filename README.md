@@ -191,3 +191,10 @@ If you patch your MAC to start with `90`, you might notice your WiFi analysis to
     *   `mtd1`: Config
     *   `mtd2`: Factory (Critical - contains MACs/EEPROM)
     *   `mtd6`: rootfs_data (User changes)
+
+## 8. Search Keywords for Others
+*   **Brand/Models:** PIX-LINK, LV-CAP07, CAP07, WiFi 6 AX1800/AX3000
+*   **Chipset:** MediaTek MT7915, MT7975, MT7621
+*   **Issue:** All units have same MAC address, MAC address conflict, WiFi MAC cloning, MAC flapping
+*   **Error:** `ifconfig ra0 hw ether` not supported, `iwpriv` MAC change failed
+*   **Vulnerability:** Ping Detect command injection, hidden superadmin Admin2024
